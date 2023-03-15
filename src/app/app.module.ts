@@ -5,23 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DetailsComponent } from './welcome/details/details.component';
-import { HighlightDirective } from './shared/highlight.directive';
 import { AboutComponent } from './about/about.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { TodayComponent } from './dashboard/today/today.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     DetailsComponent,
-    HighlightDirective,
-    AboutComponent,
-    DashboardComponent,
-    TodayComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
+    SharedModule,
     AppRoutingModule
   ],
   providers: [],
